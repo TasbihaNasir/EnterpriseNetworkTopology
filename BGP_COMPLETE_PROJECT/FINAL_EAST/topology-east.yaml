@@ -1,0 +1,93 @@
+name: campus-east-ebgp
+
+topology:
+  nodes:
+    # Backbone (Area 0): r1–r4
+    r1:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r1/daemons:/etc/frr/daemons
+        - ./r1/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r1/frr.conf:/etc/frr/frr.conf
+    r2:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r2/daemons:/etc/frr/daemons
+        - ./r2/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r2/frr.conf:/etc/frr/frr.conf
+    r3:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r3/daemons:/etc/frr/daemons
+        - ./r3/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r3/frr.conf:/etc/frr/frr.conf
+    r4:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r4/daemons:/etc/frr/daemons
+        - ./r4/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r4/frr.conf:/etc/frr/frr.conf
+    r5:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r5/daemons:/etc/frr/daemons
+        - ./r5/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r5/frr.conf:/etc/frr/frr.conf
+    r6:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r6/daemons:/etc/frr/daemons
+        - ./r6/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r6/frr.conf:/etc/frr/frr.conf
+    r7:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r7/daemons:/etc/frr/daemons
+        - ./r7/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r7/frr.conf:/etc/frr/frr.conf
+    r8:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r8/daemons:/etc/frr/daemons
+        - ./r8/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r8/frr.conf:/etc/frr/frr.conf
+    r9:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r9/daemons:/etc/frr/daemons
+        - ./r9/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r9/frr.conf:/etc/frr/frr.conf
+    r10:
+      kind: linux
+      image: quay.io/frrouting/frr:8.4.2
+      binds:
+        - ./r10/daemons:/etc/frr/daemons
+        - ./r10/vtysh.conf:/etc/frr/vtysh.conf
+        - ./r10/frr.conf:/etc/frr/frr.conf
+
+  links:
+    # Backbone links (Area 0 - Full connectivity between R1-R4)
+    - endpoints: ["r1:eth1", "r2:eth1"]
+    - endpoints: ["r2:eth2", "r3:eth1"]
+    - endpoints: ["r3:eth2", "r4:eth1"]
+    
+    # eBGP links from Backbone to external ASes
+    - endpoints: ["r1:eth2", "r5:eth1"]   # R1 (AS 65000) <-> R5 (AS 65001)
+    - endpoints: ["r2:eth3", "r7:eth1"]   # R2 (AS 65000) <-> R7 (AS 65002)
+    - endpoints: ["r3:eth4", "r10:eth1"]  # R3 (AS 65000) <-> R10 (AS 65004 - ISP)
+    - endpoints: ["r4:eth4", "r9:eth1"]   # R4 (AS 65000) <-> R9 (AS 65003)
+    
+    # Area 1 internal links (AS 65001)
+    - endpoints: ["r5:eth2", "r6:eth1"]   # R5 <-> R6 (iBGP)
+    
+    # Area 2 internal links (AS 65002)
+    - endpoints: ["r7:eth2", "r8:eth1"]   # R7 <-> R8 (iBGP)

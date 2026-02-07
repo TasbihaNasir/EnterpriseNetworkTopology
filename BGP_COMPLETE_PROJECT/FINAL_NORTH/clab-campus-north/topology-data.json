@@ -1,0 +1,713 @@
+{
+  "name": "campus-north",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-a7f2aa90fa5b",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "pc1": {
+      "index": "0",
+      "shortname": "pc1",
+      "longname": "clab-campus-north-pc1",
+      "fqdn": "pc1.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.24",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::18",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc1",
+        "clab-node-longname": "clab-campus-north-pc1",
+        "clab-node-name": "pc1",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc2": {
+      "index": "1",
+      "shortname": "pc2",
+      "longname": "clab-campus-north-pc2",
+      "fqdn": "pc2.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::d",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc2",
+        "clab-node-longname": "clab-campus-north-pc2",
+        "clab-node-name": "pc2",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc3": {
+      "index": "2",
+      "shortname": "pc3",
+      "longname": "clab-campus-north-pc3",
+      "fqdn": "pc3.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc3",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc3",
+        "clab-node-longname": "clab-campus-north-pc3",
+        "clab-node-name": "pc3",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc4": {
+      "index": "3",
+      "shortname": "pc4",
+      "longname": "clab-campus-north-pc4",
+      "fqdn": "pc4.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc4",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.25",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::19",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/pc4",
+        "clab-node-longname": "clab-campus-north-pc4",
+        "clab-node-name": "pc4",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r1": {
+      "index": "4",
+      "shortname": "r1",
+      "longname": "clab-campus-north-r1",
+      "fqdn": "r1.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r1",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.19",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::13",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r1",
+        "clab-node-longname": "clab-campus-north-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r10": {
+      "index": "5",
+      "shortname": "r10",
+      "longname": "clab-campus-north-r10",
+      "fqdn": "r10.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r10",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.22",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::16",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r10",
+        "clab-node-longname": "clab-campus-north-r10",
+        "clab-node-name": "r10",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "6",
+      "shortname": "r2",
+      "longname": "clab-campus-north-r2",
+      "fqdn": "r2.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r2",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.23",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::17",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r2",
+        "clab-node-longname": "clab-campus-north-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r3": {
+      "index": "7",
+      "shortname": "r3",
+      "longname": "clab-campus-north-r3",
+      "fqdn": "r3.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r3",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.20",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::14",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r3",
+        "clab-node-longname": "clab-campus-north-r3",
+        "clab-node-name": "r3",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r4": {
+      "index": "8",
+      "shortname": "r4",
+      "longname": "clab-campus-north-r4",
+      "fqdn": "r4.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r4",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.17",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::11",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r4",
+        "clab-node-longname": "clab-campus-north-r4",
+        "clab-node-name": "r4",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r5": {
+      "index": "9",
+      "shortname": "r5",
+      "longname": "clab-campus-north-r5",
+      "fqdn": "r5.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r5",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.14",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::e",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r5",
+        "clab-node-longname": "clab-campus-north-r5",
+        "clab-node-name": "r5",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r6": {
+      "index": "10",
+      "shortname": "r6",
+      "longname": "clab-campus-north-r6",
+      "fqdn": "r6.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r6",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.18",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::12",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r6",
+        "clab-node-longname": "clab-campus-north-r6",
+        "clab-node-name": "r6",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r7": {
+      "index": "11",
+      "shortname": "r7",
+      "longname": "clab-campus-north-r7",
+      "fqdn": "r7.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r7",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::10",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r7",
+        "clab-node-longname": "clab-campus-north-r7",
+        "clab-node-name": "r7",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r8": {
+      "index": "12",
+      "shortname": "r8",
+      "longname": "clab-campus-north-r8",
+      "fqdn": "r8.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r8",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.21",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::15",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r8",
+        "clab-node-longname": "clab-campus-north-r8",
+        "clab-node-name": "r8",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r9": {
+      "index": "13",
+      "shortname": "r9",
+      "longname": "clab-campus-north-r9",
+      "fqdn": "r9.campus-north.io",
+      "group": "",
+      "labdir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r9",
+      "kind": "linux",
+      "image": "quay.io/frrouting/frr:8.4.2",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.15",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::f",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-a7f2aa90fa5b",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/clab-campus-north/r9",
+        "clab-node-longname": "clab-campus-north-r9",
+        "clab-node-name": "r9",
+        "clab-node-type": "",
+        "clab-owner": "tasbiha",
+        "clab-topo-file": "/home/tasbiha/BGP_COMPLETE_PROJECT/FINAL_NORTH/topology-north.yaml",
+        "containerlab": "campus-north"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a0:4a:3c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4b:67:62",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:5b:2d:28",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c0:b7:2f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:c1:da:00",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:6d:d2:58",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:34:7c:98",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:c7:b7:09",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:e6:de:a7",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:98:4e:5a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r3",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:a6:94:11",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:ad:79:da",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:c9:11:12",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r5",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c7:ed:fb",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:5f:78:46",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r7",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ff:09:fd",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r3",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:3b:00:c6",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r10",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:e8:f6:06",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r4",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:16:5d:17",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r9",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:84:7f:41",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r5",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:6b:05:c3",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r6",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:9b:59:e7",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r6",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:88:9b:47",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:fb:1b:26",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r6",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:40:15:6f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:97:5f:87",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r7",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:04:70:05",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r8",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:6d:c4:14",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r8",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:38:91:86",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:32:f3:c0",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r8",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:b6:90:a4",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:45:b1:9f",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
