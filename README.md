@@ -1,6 +1,3 @@
-![Stars](https://img.shields.io/github.com/TasbihaNasir/EnterpriseNetworkTopology)
-![Forks](https://img.shields.io/github.com/TasbihaNasir/EnterpriseNetworkTopology)
-![Issues](https://img.shields.io/github.com/TasbihaNasir/EnterpriseNetworkTopology)
 # Enterprise-Grade BGP/OSPF Network Simulation
 
 A hierarchical multi-AS network implementation demonstrating advanced BGP routing, OSPF integration, and inter-domain connectivity using containerized routers.
